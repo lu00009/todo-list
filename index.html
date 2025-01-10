@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="header">TODO LIST</h2>
+  <button id="darkMode">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+  <form action="">
+    <input type="text" class="search" placeholder="Search note...">  
+    <i class="fa-solid fa-magnifying-glass" style="color: #b197fc;"></i>
+    <div class="select">
+      <select name="todos" class="filter-todos">
+        <option value="all">All</option>
+        <option value="complete">Complete</option>
+        <option value="incomplete">Incomplete</option>
+      </select>
+    </div>
+  </form> 
+  <div class="todo-container">
+     
+  </div>
+  <div id="bigmodal">
+    <div id="modal">
+      <h2 class="popupheader">NEW NOTE</h2><br>
+      <input type="text" id="addtask" placeholder="Enter your note..."> <br>
+      <div id="popbtns">
+        <button id="cancel">Cancel</button>
+        <button id="apply">Apply</button>
+      </div>
+    </div>
+  </div>
+  <div id="add">
+    <i class="fa-solid fa-circle-plus" style="color: #B197FC;"></i>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
